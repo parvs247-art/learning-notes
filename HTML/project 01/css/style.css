@@ -44,7 +44,7 @@ header ul li a:hover{
 
 main{
     height: 90vh;
-    background: url("/project 01/img/bg.png") no-repeat center center/cover;
+    background: url("/HTML/project 01/img/bg.png") no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
