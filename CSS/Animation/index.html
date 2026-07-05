@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        div{
+            height: 150px;
+            width: 150px;
+            background-color: red;
+            /* animation-name: myAnimation;
+            animation-duration: 4s;
+            animation-iteration-count: infinite; */
+            animation: myAnimation 4s infinite;
+        }
+        @keyframes myAnimation{
+            0%{
+                background-color: red;
+                transform: translate(0px);
+            }
+            25%{
+                background-color: green;
+                transform: translate(100px);
+            }
+            50%{
+                background-color: blue;
+                transform: translate(100px,100px);
+            }
+            75%{
+                background-color: yellow;
+                transform: translate(0px,100px);
+            }
+            100%{
+                background-color: red;
+                transform: translate(0px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        hello
+    </div>
+</body>
+</html>

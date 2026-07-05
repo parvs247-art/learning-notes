@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+        div{
+            position: absolute;
+            top: 150px;
+            left: 150px;
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            border: 2px solid black;
+            transition: all 1s ease-in-out 0.5ms;
+            /* transform: rotate(90deg) */
+            
+            /* transform: scale2); */
+        }
+        div:hover{
+            transform: scale(2);
+            translate: 50px;
+            transform: skew(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        hello 
+    </div>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML forms</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            max-width: 450px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        div {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #444;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #4CAF50;
+            outline: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        p {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>forms in html</h1>
+    <form action="/submit.php"></form>
+    <div>
+        <label for="Name">Name</label>
+        <input id="Name" type="text" placeholder="Enter Name" required>
+    </div>
+    <div>
+        <label for="DOB">Date of Birth</label>
+        <input id="DOB" type="date" required>
+    </div>
+    <div>
+        <label for="password">password</label>
+        <input id="password" type="password" required>
+    </div>
+    <div>
+        <label for="Gender">Gender</label>
+        <select id="Gender" required>
+            <option value="male">male</option>
+            <option value="female">female</option>
+            <option value="other">other</option>
+        </select>
+    </div>
+
+
+    <!--radio buttons -->
+    <div>
+        <p>subscription plan</p>
+        <input type="radio" name="subscription" id="basic">
+        <label for="basic">basic</label>
+        <input type="radio" name="subscription" id="premium">
+        <label for="premium">premium</label>
+        <input type="radio" name="subscription" id="vip">
+        <label for="vip">vip</label>
+    </div>
+
+    <!-- check boxes -->
+    <div>
+        <p>interests</p>
+        <input type="checkbox" id="music" name="interests">
+        <label for="music">music</label>
+        <input type="checkbox" id="sports" name="interests">
+        <label for="sports">sports</label>
+        <input type="checkbox" id="reading" name="interests">
+        <label for="reading">reading</label>
+
+
+    </div>
+
+    <!-- textarea for comments -->
+    <div>
+
+        <label for="comments">comments</label>
+        <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+    </div>
+
+    <div>
+        <button type="submit">submit</button>
+    </div>
+</body>
+
+</html>
