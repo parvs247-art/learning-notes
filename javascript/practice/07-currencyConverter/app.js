@@ -17,4 +17,16 @@ for(let select of dropdowns) {
     }
     select.appendChild(newOption);
   }   
+
+  select.addEventListener("change", (evt) => {
+    updateFlag(evt.target);
+  });
 }
+
+  const updateFlag =(element) => {
+    let currCode = element.value;
+    let countryCode = countryList[currCode];
+    let newsrc = `https://flagsapi.com/${countryCode}/flat/64.png`;
+    let flagImg = element.parentElement.querySelector("img");
+    flagImg.src = newsrc;
+  }
