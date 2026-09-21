@@ -19,9 +19,10 @@ This repo is a collection of daily learning exercises, small tasks, and practice
 - `css/` — CSS practice, layouts, animations, and styling exercises
 - `html/` — HTML structure and practice files
 - `java/` — Java basics and learning files
-- `javascript/` — JavaScript fundamentals, arrays, functions, and practice problems
+- `javascript/` — JavaScript fundamentals and core concept files
 - `notes/` — learning notes and summaries
-- `projects/` — small mini-projects and front-end experiments
+- `projects/` — mini-projects and practice exercises
+- `projects/js-practice/` — JavaScript practice tasks and small project exercises
 
 ## Current focus
 
