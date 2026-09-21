@@ -1,20 +1,40 @@
 # Learning Notes
 
-My daily practice and learning code as I build my skills in programming and computer science fundamentals. This repo is not meant to be polished — it's where I document my progress consistently.
+A personal repository for practicing and documenting my journey in programming, web development, and computer science fundamentals.
 
-## What's inside
+## Overview
 
-- **C-programs/** — C programming exercises and practice problems
-- **Cpp-programs/** — C++ practice, OOP concepts and exercises
-- **HTML-CSS-basics/** — HTML and CSS practice snippets and small layouts
-- **JS-fundamentals/** — JavaScript basics and small exercises as I learn full-stack development
+This repo is a collection of daily learning exercises, small tasks, and practice files as I build my skills in:
 
-## About me
+- HTML
+- CSS
+- JavaScript
+- Java
+- C++
+- Programming logic and problem solving
 
-BCA 2nd year student, currently learning full stack development (HTML, CSS, JS, React) and exploring AI automation with tools like n8n. Working toward an internship as a Full Stack AI Engineer.
+## Repository structure
 
-For my actual projects (not practice), check my pinned repositories on my profile.
+- `cpp/` — C++ exercises, patterns, and fundamentals
+- `css/` — CSS practice, layouts, animations, and styling exercises
+- `html/` — HTML structure and practice files
+- `java/` — Java basics and learning files
+- `javascript/` — JavaScript fundamentals, arrays, functions, and practice problems
+- `notes/` — learning notes and summaries
+- `projects/` — small mini-projects and front-end experiments
 
-## Note
+## Current focus
 
-This repo updates frequently — expect messy commits, that's the point. Consistency over perfection.
+I am currently improving my foundation in:
+
+- Front-end development
+- Responsive design
+- JavaScript logic
+- C++ syntax and patterns
+- Problem-solving and consistency in coding practice
+
+## Goal
+
+Build a strong habit of learning, practicing regularly, and creating small projects that improve my coding skills over time.
+
+This repository is meant to reflect progress, not perfection.
