@@ -20,6 +20,7 @@ This repo is a collection of daily learning exercises, small tasks, and practice
 - `html/` — HTML structure and practice files
 - `java/` — Java basics and learning files
 - `javascript/` — JavaScript fundamentals and core concept files
+- `reactjs/` — ReactJS learning files, notes, and exercises
 - `notes/` — learning notes and summaries
 - `projects/` — mini-projects and practice exercises
 - `projects/js-practice/` — JavaScript practice tasks and small project exercises
