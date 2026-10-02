@@ -1,0 +1,12 @@
+const reactElement ={
+    type:'a',
+    props: {
+        href: 'https://google.com',
+        target: '_blank',
+    },
+    children: 'click me to visit google.com'
+}
+
+
+
+const maincontainer = document.querySelector('#root')
