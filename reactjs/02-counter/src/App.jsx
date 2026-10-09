@@ -1,14 +1,21 @@
 import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
 import './App.css'
 
 function App() {
-  let counter = 5;
+let [counter, setCounter] = useState(0)
+  // let counter = 0;
 
   const addValue = () => {
-    console.log("value added", Math.random());
+    console.log("clicked", counter);
+    setCounter(counter + 1);
+  };
+
+  const removeValue = () => {
+    console.log("clicked", counter);
+    setCounter(counter - 1);
+    if(counter <= 0){
+      setCounter(0);
+    }
   }
 
   return (
@@ -20,7 +27,9 @@ function App() {
      onClick = {addValue}
      >Add value</button>
      <br/>
-     <button>Remove value</button>
+     <button 
+     onClick={removeValue}
+     >Remove value</button>
     </>
   )
 }
