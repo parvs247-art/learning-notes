@@ -26,29 +26,29 @@ function App() {
       </div>
       </section>
 
-      <section className="text-center space-y-5 max-w-3xl mx-auto px-5 py-12 ">
-        <h2 className='text-3xl font-bold text-center'>Resources</h2>
-        <div className='bg-blue-800 bg-linear-to-bl from purple-800 to-blue-800 space-y-3 p-5 rounded-md'>
+      <section className="text-center space-y-5 max-w-3xl mx-auto px-5 py-12 grid lg:grid-cols-3 lg:gap-10 lg:items-center lg:max-w-5xl">
+        <h2 className='text-3xl font-bold text-center col-span-full'>Resources</h2>
+        <div className='bg-blue-800 bg-gradient-to-bl from-purple-800 to-blue-800 space-y-3 p-5 rounded-md'>
           <h3>What is Tailwind?</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, placeat.</p>
           <a href="" className="font-bold text-fuchsia-500 hover:text-fuchsia-600">Read more</a>
         </div>
-         <div className='bg-blue-800 bg-linear-to-bl from purple-800 to-blue-800 space-y-3 p-5 rounded-md'>
+         <div className='bg-blue-800 bg-gradient-to-bl from-purple-800 to-blue-800 space-y-3 p-5 rounded-md'>
           <h3>What is Tailwind?</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, placeat.</p>
           <a href="" className="font-bold text-fuchsia-500 hover:text-fuchsia-600">Read more</a>
         </div>
-         <div className='bg-blue-800 bg-linear-to-bl from purple-800 to-blue-800 space-y-3 p-5 rounded-md'>
+         <div className='bg-blue-800 bg-gradient-to-bl from-purple-800 to-blue-800 space-y-3 p-5 rounded-md'>
           <h3>What is Tailwind?</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, placeat.</p>
           <a href="" className="font-bold text-fuchsia-500 hover:text-fuchsia-600">Read more</a>
         </div>
-         <div className='bg-blue-800 bg-linear-to-bl from purple-800 to-blue-800 space-y-3 p-5 rounded-md'>
+         <div className='bg-blue-800 bg-gradient-to-bl from-purple-800 to-blue-800 space-y-3 p-5 rounded-md'>
           <h3>What is Tailwind?</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, placeat.</p>
           <a href="" className="font-bold text-fuchsia-500 hover:text-fuchsia-600">Read more</a>
         </div>
-         <div className='bg-blue-800 bg-linear-to-bl from purple-800 to-blue-800 space-y-3 p-5 rounded-md'>
+         <div className='bg-blue-800 bg-gradient-to-bl from-purple-800 to-blue-800 space-y-3 p-5 rounded-md'>
           <h3>What is Tailwind?</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, placeat.</p>
           <a href="" className="font-bold text-fuchsia-500 hover:text-fuchsia-600">Read more</a>
