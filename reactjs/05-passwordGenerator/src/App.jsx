@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useEffect , useRef } from 'react'
 import './App.css'
 
 function App() {
@@ -6,6 +6,9 @@ function App() {
   const [includeNumbers, setIncludeNumbers] = useState(false)
   const [includeChar, setIncludeChar] = useState(false)
   const [password, setPassword] = useState('')
+
+  //useref hook
+  const passwordRef = useRef(null)
 
   const passwordGenerator = useCallback(() => {
     let password = ''
@@ -17,19 +20,32 @@ function App() {
       string += '!@#$%^&*()_+'
     }
     for (let i = 1; i <= length; i++) {
-      const randomIndex = Math.floor(Math.random() * string.length + 1)
+      const randomIndex = Math.floor(Math.random() * string.length)
       password += string[randomIndex]
     }
     setPassword(password)
   },[length, includeNumbers, includeChar, setPassword])
+
+  const copyPassToclipboard = useCallback(() => {
+    passwordRef.current.select()
+    passeordRef.current.setSelectionRange(0, 999)
+    window.navigator.clipboard.writeText(password)
+  }, [password])
+
+
+  useEffect(() => {
+    passwordGenerator()
+  }, [passwordGenerator, length, includeNumbers, includeChar])
 
   return (
     <>
     <div  className="w-full max-w-sm mx-auto bg-gray-300 p-4 rounded-lg shadow-md mt-10">
     <h1 className="text-2xl font-bold text-center my-4">Password Generator</h1>
       <div className="mb-4" flex shadow rounded-lg overflow-hidden>
-        <input type="text" value={password} placeholder="Generated Password" readOnly className="bg-white border border-gray-300 rounded-md py-2 px-10 focus:outline-none focus:ring-2 focus:ring-blue-500 " />
-        <button  className="bg-blue-500 text-white py-1 px-3 rounded-md ml-2 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">copy</button>
+        <input type="text" value={password} placeholder="Generated Password" readOnly className="bg-white border border-gray-300 rounded-md py-2 px-10 focus:outline-none focus:ring-2 focus:ring-blue-500 "
+        ref={passwordRef} />
+        <button
+        onClick={copyPassToclipboard}  className="bg-blue-500 text-white py-1 px-3 rounded-md ml-2 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">copy</button>
       </div>
       <div className="flex text-sm gap-x-2 mb-4">
         <div className="flex items-center gap-x-1">
