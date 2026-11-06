@@ -1,16 +1,77 @@
-# React + Vite
+# React Background Color Changer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+Built a simple Background Color Changer using React and Tailwind CSS. This project helped me understand React state management, event handling, and dynamic inline styling.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Technologies Used
+- React
+- JavaScript
+- Tailwind CSS
 
-## React Compiler
+## React Concepts Learned
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 1. useState()
 
-## Expanding the ESLint configuration
+Used to store and update the selected background color.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```jsx
+const [color, setColor] = useState('lightblue');
+```
+
+- `color`: Stores the current background color.
+- `setColor()`: Updates the background color.
+- `lightblue`: Initial state.
+
+### 2. Dynamic Inline Styling
+
+```jsx
+style={{ backgroundColor: color }}
+```
+
+React applies the current value of the `color` state to the element's background.
+
+### 3. Event Handling
+
+```jsx
+onClick={() => setColor('lightgreen')}
+```
+
+When a button is clicked, the `setColor()` function updates the state.
+
+### 4. Component Re-rendering
+
+When the state changes, React re-renders the component and displays the updated background color.
+
+## Tailwind CSS Concepts
+
+| Class | Purpose |
+|---|---|
+| `w-full` | Full width |
+| `h-screen` | Full screen height |
+| `fixed` | Fixed positioning |
+| `bottom-12` | Positions element from the bottom |
+| `justify-center` | Centers items horizontally |
+| `flex-wrap` | Allows items to wrap |
+| `gap-3` | Adds spacing between items |
+| `rounded-3xl` | Adds rounded corners |
+| `shadow-lg` | Adds a large shadow |
+| `duration-200` | Sets transition duration |
+
+## Key Learnings
+
+- Managing state using `useState`.
+- Handling button click events.
+- Updating UI dynamically.
+- Using inline styles with React.
+- Styling components using Tailwind CSS.
+
+## Future Improvements
+
+- [ ] Add more background colors.
+- [ ] Add a random color button.
+- [ ] Add HEX color support.
+- [ ] Display the selected color's HEX code.
+- [ ] Improve the button design.
+
+**Learning Status:** Completed basic Background Color Changer project.
